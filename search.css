@@ -1,0 +1,278 @@
+@font-face {
+    font-family: 'GabiaGosran-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2409-2@1.0/GabiaGosran-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HakgyoansimBadasseugiTTF-L';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimBadasseugiTTF-L.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'godoRoundedR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2409-1@1.0/godoRoundedR.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HakgyoansimSantteutdotumL';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimSantteutdotumL.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 300px);
+    height: 70px;
+    border-bottom: 1px solid rgb(118, 118, 118);
+}
+
+.header__logo {
+    font-family: 'GabiaGosran-Regular';
+    letter-spacing: 5px;
+    color: rgb(60, 60, 60);
+    font-size: 42px;
+    margin-left: 50px;
+}
+
+.header__top-nav {
+    margin-left: 30px;
+    font-family: 'godoRoundedR';
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    font-size: 18px;
+    color: rgb(129, 129, 129);
+}
+
+.bar {
+    margin-top: 6px;
+    width: 1.5px;
+    height: 10px;
+    background-color: rgb(129, 129, 129);
+}
+
+.header__search {
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 20px;
+}
+
+.header__search input {
+    all: unset;
+    font-family: 'HakgyoansimBadasseugiTTF-L';
+    margin-left: 10px;
+    width: 170px;
+    font-size: 14px;
+}
+
+.search-box {
+    font-family: 'HakgyoansimBadasseugiTTF-L';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 32px;
+    margin-left: 10px;
+    color: #fff;
+    background-color: rgb(164, 164, 164);
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.bottom-header {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.header__bottom-nav {
+    width: 700px;
+    font-family: 'HakgyoansimBadasseugiTTF-L';
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.header__bottom-nav a {
+    transition: .1s;
+}
+
+.header__bottom-nav > li:hover > a {
+    color: rgb(255, 126, 126);
+}
+
+.header__bottom-nav > li > a {
+    display: flex;
+    justify-content: center;
+}
+
+.header__bottom-nav > li {
+    width: 200px;
+    height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: .3s;
+}
+
+.header__bottom-nav > li:hover {
+    height: 100%;
+}   
+
+.header__bottom-nav > li > ul {
+    margin-top: 5px;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 5px;
+    background-color: white;
+    transition: .2s;
+    z-index: 10;
+}
+
+.header__bottom-nav > li:hover > ul {
+    height: 100%;
+    opacity: 100;
+}   
+
+.header__bottom-nav > li > ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header__bottom-nav > li > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+/* main! */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+.main__contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 500px);
+    height: 500px;
+    border-radius: 30px;
+    font-family: 'HakgyoansimBadasseugiTTF-L';
+    font-weight: bold;
+    color: gray;
+    background-color: lightgray;
+    font-size: 28px;
+}
+
+/* footer! */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #313131;
+}
+
+footer .bar {
+    all: unset;
+    width: 1.3px;
+    height: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.inner-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 300px);
+    color: #fff;
+}
+
+.footer__logo {
+    font-family: 'GabiaGosran-Regular';
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+.copyright {
+    font-family: 'GabiaGosran-Regular';
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'godoRoundedR';
+}
+
+.footer__sns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 600px;
+    width: 100px;
+}
+
+.footer__sns li {
+    transition: .3s;
+}
+
+.footer__sns li:hover {
+    opacity: .7;
+}
+
+.footer__sns img {
+    height: 24px;
+}
+
+.footer__sns li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
